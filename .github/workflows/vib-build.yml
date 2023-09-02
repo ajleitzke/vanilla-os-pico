@@ -32,7 +32,7 @@ jobs:
         ./vib build recipe.yml
         sed -i '/\/var\/tmp\/*/{d}' Containerfile
     - name: Build the Docker image
-      run: docker image build -f Containerfile --tag ghcr.io/vanilla-os/pico:main .
+      run: docker image build -f Containerfile --tag ghcr.io/ajleitzke/vanillaos-pico:main .
 
     - name: Create SHA256SUMS
       run: |
