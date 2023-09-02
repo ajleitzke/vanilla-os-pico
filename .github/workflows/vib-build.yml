@@ -44,7 +44,7 @@ jobs:
     - name: Push To GHCR
       run: |
          docker login ghcr.io -u ${{ env.REGISTRY_USER }} -p ${{ env.REGISTRY_PASSWORD }}
-         docker image push "ghcr.io/vanilla-os/pico:main"
+         docker image push "ghcr.io/ajleitzke/vanillaos-pico:main"
 
     - uses: actions/upload-artifact@v3
       with:
