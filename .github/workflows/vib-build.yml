@@ -1,4 +1,5 @@
 name: Vib Build
+  permissions: write-all
 
 on:
   push:
