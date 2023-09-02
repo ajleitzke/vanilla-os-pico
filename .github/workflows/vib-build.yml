@@ -1,5 +1,4 @@
 name: Vib Build
-  permissions: write-all
 
 on:
   push:
@@ -13,6 +12,7 @@ env:
 jobs:
 
   build:
+    permissions: write-all
 
     runs-on: ubuntu-latest
 
